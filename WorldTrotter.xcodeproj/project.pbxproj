@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3119682B221369EC00FB1829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119682A221369EC00FB1829 /* AppDelegate.swift */; };
-		3119682D221369EC00FB1829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119682C221369EC00FB1829 /* ViewController.swift */; };
 		31196830221369EC00FB1829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3119682E221369EC00FB1829 /* Main.storyboard */; };
 		31196832221369EC00FB1829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31196831221369EC00FB1829 /* Assets.xcassets */; };
 		31196835221369EC00FB1829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31196833221369EC00FB1829 /* LaunchScreen.storyboard */; };
 		31196840221369EC00FB1829 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119683F221369EC00FB1829 /* WorldTrotterTests.swift */; };
 		3119684B221369EC00FB1829 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119684A221369EC00FB1829 /* WorldTrotterUITests.swift */; };
+		3119685922137FA500FB1829 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119685822137FA500FB1829 /* ConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		31196827221369EC00FB1829 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3119682A221369EC00FB1829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3119682C221369EC00FB1829 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3119682F221369EC00FB1829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31196831221369EC00FB1829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31196834221369EC00FB1829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		31196846221369EC00FB1829 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3119684A221369EC00FB1829 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		3119684C221369EC00FB1829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3119685822137FA500FB1829 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		31196829221369EC00FB1829 /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				3119685822137FA500FB1829 /* ConversionViewController.swift */,
 				3119682A221369EC00FB1829 /* AppDelegate.swift */,
-				3119682C221369EC00FB1829 /* ViewController.swift */,
 				3119682E221369EC00FB1829 /* Main.storyboard */,
 				31196831221369EC00FB1829 /* Assets.xcassets */,
 				31196833221369EC00FB1829 /* LaunchScreen.storyboard */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3119682D221369EC00FB1829 /* ViewController.swift in Sources */,
+				3119685922137FA500FB1829 /* ConversionViewController.swift in Sources */,
 				3119682B221369EC00FB1829 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
