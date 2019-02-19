@@ -75,4 +75,13 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
             return true
         }
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        let temp = fahrenheitValue?.value
+        if let t = temp, t < 25.0 {
+            let alert = UIAlertController(title: "Brrr!", message: "\(t)F is cold", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }

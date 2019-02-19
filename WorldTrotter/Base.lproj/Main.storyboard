@@ -52,7 +52,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="hzY-D7-yuz"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="E4g-Jk-xoL"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KXI-1W-npE"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -77,11 +77,15 @@
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="SZ1-M0-M3z" id="fFJ-09-2i3"/>
-                        <outlet property="textField" destination="saf-NG-AUq" id="jgz-I0-nPt"/>
+                        <outlet property="textField" destination="saf-NG-AUq" id="b28-95-GI8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="2K6-e3-OYM"/>
+                <tapGestureRecognizer id="2K6-e3-OYM">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="okc-xG-onD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="72.799999999999997" y="37.331334332833585"/>
         </scene>
