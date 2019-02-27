@@ -19,6 +19,18 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         updateCelsiusLabel()
     }
     
+    //override view will appear to change the background color based on what time of day it is
+    //Use Calendar components to access current hour
+    override func viewWillAppear(_ animated: Bool) {
+        let hour = Calendar.current.component(.hour, from: Date())
+        if hour >= 7 && hour <= 20 {
+            self.view.backgroundColor = UIColor.yellow
+        } else {
+            self.view.backgroundColor = UIColor.black
+        }
+        
+    }
+    
     let numberFormatter: NumberFormatter = {
         let nf = NumberFormatter()
         nf.numberStyle = .decimal
@@ -26,6 +38,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         nf.maximumFractionDigits = 1
         return nf
     }()
+    
+   
     @IBOutlet var celsiusLabel: UILabel!
     
     var fahrenheitValue: Measurement<UnitTemperature>? {
